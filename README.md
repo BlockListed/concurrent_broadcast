@@ -15,5 +15,5 @@ As you can imagine, if a reader continues
 storing a very old item, any newer item then can no longer be dropped,
 until the reader advances its position, which results in this implementation
 being vulnerable to the "slow-receiver" problem. `tokio::sync::broadcast`
-doesn't have this weakness although the trade-off is, that it doesn't
+doesn't have this weakness, although the trade-off is, that it doesn't
 have guaranteed delivery.
