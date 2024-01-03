@@ -1,10 +1,11 @@
 //! # concurrent_broadcast
 //! A high-performance guaranteed delivery broadcast channel.
-//! ## WARNING
+//! <div class="warning">
 //! Due to its delivery guarantees, this channel is vulnerable to
 //! the "slow-receiver" problem. If a receiver doesn't `recv` messages
 //! fast enough, old messages will accumulate, since they won't be dropped
 //! until they are seen by the slow sender.
+//! </div>
 //!
 //! # Example
 //!
